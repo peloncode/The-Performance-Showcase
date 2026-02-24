@@ -1,0 +1,63 @@
+PerformanceShowcase/
+├── app.json
+├── eslint.config.js
+├── package.json
+├── README.md
+├── tsconfig.json
+├── app/
+│   ├── _layout.tsx
+│   ├── modal.tsx
+│   └── (tabs)/
+│       ├── _layout.tsx
+│       ├── explore.tsx
+│       └── index.tsx
+├── assets/
+│   └── images/
+├── components/
+│   ├── external-link.tsx
+│   ├── haptic-tab.tsx
+│   ├── hello-wave.tsx
+│   ├── parallax-scroll-view.tsx
+│   ├── themed-text.tsx
+│   └── themed-view.tsx
+│   └── ui/
+│       ├── collapsible.tsx
+│       ├── icon-symbol.ios.tsx
+│       └── icon-symbol.tsx
+├── constants/
+│   └── theme.ts
+├── hooks/
+│   ├── use-color-scheme.ts
+│   ├── use-color-scheme.web.ts
+│   └── use-theme-color.ts
+├── scripts/
+│   └── reset-project.js
+├── src/
+│   ├── api/
+│   │   └── queryClient.ts
+│   ├── assets/
+│   ├── components/
+│   ├── constants/
+│   ├── features/
+│   │   ├── details/
+│   │   │   ├── components/
+│   │   │   │   ├── DetailScreen.tsx
+│   │   │   │   └── InteractiveChart.tsx
+│   │   │   ├── hooks/
+│   │   │   │   └── useChartLogic.ts
+│   │   │   └── types/
+│   │   │       └── chart.ts
+│   │   └── market/
+│   │       ├── api/
+│   │       │   └── useMarketData.ts
+│   │       ├── components/
+│   │       │   └── MarketItem.tsx
+│   │       ├── store/
+│   │       └── utils/
+│   │           └── mockData.ts
+│   ├── hooks/
+│   ├── navigation/
+│   └── store/
+
+
+Nota: Este árbol refleja la estructura proporcionada en el workspace. Si hay archivos ocultos o carpetas adicionales no listadas, no aparecen aquí.

@@ -1,50 +1,75 @@
-# Welcome to your Expo app 👋
+# The Performance Showcase: Crypto Market Dashboard 🚀
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Skia](https://img.shields.io/badge/Shopify_Skia-FF69B4?style=for-the-badge&logo=shopify&logoColor=white)
+![Reanimated](https://img.shields.io/badge/Reanimated_3-8A2BE2?style=for-the-badge&logo=react&logoColor=white)
 
-## Get started
+## 📱 App Preview
 
-1. Install dependencies
+<div align="center">
+  <img src="./assets/capture2.jpeg" width="300" alt="Market List" />
+  <img src="./assets/capture1.jpeg" width="300" alt="Interactive Chart" />
+  <img src="./assets/capture4.jpeg" width="300" alt="Interactive Chart" />
+  <img src="./assets/capture3.jpeg" width="300" alt="Interactive Chart" />
+  <p><i>Interfaz Dark Premium con renderizado de alto rendimiento a 60 FPS.</i></p>
+</div>
 
-   ```bash
-   npm install
-   ```
+---
 
-2. Start the app
+## 📋 Objetivo del Proyecto
 
-   ```bash
-   npx expo start
-   ```
+"The Performance Showcase" es un panel financiero de alta fidelidad diseñado para demostrar el dominio técnico en **optimización de renderizado masivo** e **interactividad de baja latencia**. El proyecto aborda el reto de manejar flujos de datos constantes (1,000+ activos) manteniendo una interfaz fluida mediante el uso de hilos de UI dedicados y renderizado por GPU.
 
-In the output, you'll find options to open the app in a
+## 🏗️ Arquitectura: Feature-Driven Development (FDD)
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+El proyecto sigue una estructura organizada por funcionalidades para maximizar la escalabilidad:
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+1.  **Market Feature:** Gestión de listas infinitas mediante `FlashList`. Implementa un motor de búsqueda filtrado en memoria con `useMemo` para evitar bloqueos del hilo principal.
+2.  **Details Feature:** Visualización profunda de activos. Utiliza **Shared Values** para comunicar componentes sin causar re-renders en el árbol de React.
+3.  **Core UI Module:** Componentes de alto nivel como _Skeleton Loaders_ con gradientes animados (Shimmer Effect) y gestión de _Safe Area Insets_.
 
-## Get a fresh project
+## 📡 High-Performance Stack
 
-When you're ready, run:
+La aplicación destaca por tres pilares de ingeniería avanzada:
 
-```bash
-npm run reset-project
-```
+- **Zero-Jank List:** Renderizado de 1,000 elementos a 60 FPS constantes. Se eliminó el "blanking" mediante el reciclaje de vistas de `FlashList` y la optimización de `memo` y `useCallback` en cada item.
+- **GPU Accelerated Graphics:** Gráficos interactivos construidos con **Shopify Skia**. El cursor y el precio dinámico se calculan y actualizan en el hilo de la UI usando `useDerivedValue` y `AnimatedTextInput`, permitiendo interactividad sin latencia de JavaScript.
+- **Shared Element Transitions:** Micro-interacción fluida que transfiere el icono del activo desde la lista hasta la pantalla de detalle mediante una arquitectura de capas (Layered Rendering) para mantener la continuidad visual.
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## 🛠️ Stack Tecnológico
 
-## Learn more
+- **Core:** React Native (Expo SDK 54) + TypeScript.
+- **Performance List:** Shopify FlashList.
+- **Graphics:** Shopify React Native Skia.
+- **Animations:** React Native Reanimated 3 + Gesture Handler.
+- **Data Fetching:** TanStack Query (React Query).
+- **UI/UX:** Expo Linear Gradient, Safe Area Context.
 
-To learn more about developing your project with Expo, look at the following resources:
+## 🚀 Instalación y Uso
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+1.  **Clonar el repositorio.**
+2.  **Instalar dependencias:** ```bash
+    npm install
 
-## Join the community
+    ```
 
-Join our community of developers creating universal apps.
+    ```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+3.  **Instalar librerías nativas de Expo:** ```bash
+    npx expo install
+
+    ```
+
+    ```
+
+4.  **Iniciar el entorno:** ```bash
+    npx expo start
+
+    ```
+
+    ```
+
+---
+
+**Desarrollado con un enfoque obsesivo en el rendimiento y la experiencia de usuario (UX) de grado financiero.**

@@ -29,7 +29,7 @@ El proyecto sigue una estructura organizada por funcionalidades para maximizar l
 2.  **Details Feature:** Visualización profunda de activos. Utiliza **Shared Values** para comunicar componentes sin causar re-renders en el árbol de React.
 3.  **Core UI Module:** Componentes de alto nivel como _Skeleton Loaders_ con gradientes animados (Shimmer Effect) y gestión de _Safe Area Insets_.
 
-## 📡 High-Performance Stack
+## 📡 Estrategia High-Performance Stack
 
 La aplicación destaca por tres pilares de ingeniería avanzada:
 
@@ -48,28 +48,9 @@ La aplicación destaca por tres pilares de ingeniería avanzada:
 
 ## 🚀 Instalación y Uso
 
-1.  **Clonar el repositorio.**
-2.  **Instalar dependencias:** ```bash
-    npm install
-
-    ```
-
-    ```
-
-3.  **Instalar librerías nativas de Expo:** ```bash
-    npx expo install
-
-    ```
-
-    ```
-
-4.  **Iniciar el entorno:** ```bash
-    npx expo start
-
-    ```
-
-    ```
-
----
+1. Clonar el repositorio.
+2. Instalar dependencias: `npm install`
+3. Instalar librerias nativas de Expo: `npx expo install`
+4. Iniciar app: `npx expo start`
 
 **Desarrollado con un enfoque obsesivo en el rendimiento y la experiencia de usuario (UX) de grado financiero.**
